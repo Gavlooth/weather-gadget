@@ -67,10 +67,6 @@
 (define weather-yellow (make-color 254 235 135 0.4))
 
 
-; (date-minute (seconds->date (current-seconds)))
-; (date-hour (seconds->date (current-seconds)))
-; (date-second (seconds->date (current-seconds)))
-;
 
 
 (define (spawn-rows canvas dc card)
@@ -119,7 +115,6 @@
                  (spawn-rows canvas dc 15)
                  (send dc set-text-foreground (make-color 61 31 20)))]))
 
-; (canvas)
 (define (main-)
  (send frame show #t))
 
@@ -129,3 +124,8 @@
 ; (send dc set-font (make-font #:size 14 #:family 'roman
 ;                              #:weight 'bold))
 ; (send dc set-text-foreground "blue")
+ 
+; (date-minute (seconds->date (current-seconds)))
+; (date-hour (seconds->date (current-seconds)))
+; (date-second (seconds->date (current-seconds)))
+;
